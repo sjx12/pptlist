@@ -41,7 +41,7 @@ async function getDetail(url) {
     throw new Error('Network response was not ok')
   }
   const data = await response.text()
-  console.log('getDetail', data)
+  
 
   slidesStore.setSlides(JSON.parse(data))
   init.value = true
